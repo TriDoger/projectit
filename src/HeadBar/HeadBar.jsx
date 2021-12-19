@@ -1,6 +1,7 @@
 import React from "react";
 import logo from "../resources/Vector.jpg";
 import menu from "../resources/menu.png";
+import { Dropdown } from "bootstrap";
 const HeadBar = () => {
   return (
     <header className="navbar sticky-top flex-md-nowrap p-0 shadow">
