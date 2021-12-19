@@ -3,6 +3,7 @@ import hardDrive from '../resources/hard-drive.png'
 import fileText from '../resources/file-text.png'
 import printer from '../resources/printer.png'
 import  upcScan from  '../resources/upc-scan.png'
+import { Link } from 'react-router-dom'
 const SideBar = () => {
     const [keepWidth, setKeepWidth] = useState(false);
     return (
@@ -12,12 +13,14 @@ const SideBar = () => {
       >
         <div className="position-sticky pt-3">
           <ul className="nav flex-column">
+            <Link to={"/"}>
             <li className="nav-item">
-              <a className="nav-link active" aria-current="page" href="#">
+              <a className="nav-link active" aria-current="page">
                 <img src={hardDrive} alt="Оборудование" />
                 Оборудование
               </a>
             </li>
+            </Link>
             <li className="nav-item">
               <a className="nav-link active" aria-current="page" href="#">
                 <img src={fileText} alt="Ведомости" />
