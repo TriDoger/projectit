@@ -1,0 +1,22 @@
+.authorization{
+    margin: auto;
+    width: 400px;
+    height: 398px;
+    left: 521px;
+    top: 193px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.authorization ul{
+    list-style-type: none;
+    padding: 0;
+    margin-top: 50px;
+}
+.authorization ul li{
+    margin-top:  10px;
+}
+.authorization .btn-enter{
+    align-items: center;
+    padding: 10px 16px;
+}
