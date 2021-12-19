@@ -1,7 +1,8 @@
 import React from "react";
 import logo from "../resources/Vector.jpg";
 import menu from "../resources/menu.png";
-import { Dropdown } from "bootstrap";
+import { Dropdown, DropdownButton } from "react-bootstrap";
+
 const HeadBar = () => {
   return (
     <header className="navbar sticky-top flex-md-nowrap p-0 shadow">
@@ -10,29 +11,11 @@ const HeadBar = () => {
       </a>
       <img src={logo}></img>
 
-      <div class="dropdown">
-        <button
-          class="btn btn-secondary dropdown-toggle"
-          type="button"
-          id="dropdownMenu2"
-          data-toggle="dropdown"
-          aria-haspopup="true"
-          aria-expanded="false"
-        >
-          Dropdown
-        </button>
-        <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-          <button class="dropdown-item" type="button">
-            Action
-          </button>
-          <button class="dropdown-item" type="button">
-            Another action
-          </button>
-          <button class="dropdown-item" type="button">
-            Something else here
-          </button>
-        </div>
-      </div>
+      <DropdownButton id="dropdown-basic-button" title="Dropdown button">
+        <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
+        <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
+        <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
+      </DropdownButton>
 
       <div className="navbar-nav">
         <div className="nav-item text-nowrap">
